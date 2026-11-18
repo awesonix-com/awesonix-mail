@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "product": "awesonix-mail",
+  "profile": "public",
+  "version": "0.115.2",
+  "buildNumber": "1794991218",
+  "sourceRevision": "65b1713d7d5d12ac72d28693049d0bc6da5e50b8",
+  "sourceDirty": false,
+  "generatedAt": "2026-11-18T08:37:31.000Z",
+  "platform": "linux/amd64",
+  "imageDigest": "sha256:10faa9ee3cd5490bb3bd6bf4f861430f4e234c6808bbadf8bc63884b2435f411",
+  "archive": "awesonix-mail-0.115.2-linux-amd64.tar",
+  "sha256": "e5c4f5637370185f8e51a515130ffb97bc0f2a9d35dbb4e560938421b686b05f",
+  "sizeBytes": 35617792
+}

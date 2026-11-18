@@ -1,0 +1,53 @@
+# Replace every REPLACE_ value before pasting into the TrueNAS YAML editor.
+# The database host and password may stay empty: the first-run wizard collects them.
+services:
+  awesonix-mail:
+    image: ghcr.io/awesonix-com/awesonix-mail:latest
+    ports:
+      - "8180:8180" # Edit the host port if needed.
+      # - "8443:8443" # Publish only when DAV and TLS are configured.
+    environment:
+      AWESONIX_MAIL_ENV: production
+      # Empty values let the first-run wizard collect the database host and password. Tested with MariaDB 11.4.
+      AWESONIX_MAIL_DATABASE_HOST: ""
+      AWESONIX_MAIL_DATABASE_PORT: "3306"
+      AWESONIX_MAIL_DATABASE_NAME: awesonix_mail
+      AWESONIX_MAIL_DATABASE_USER: awesonix
+      AWESONIX_MAIL_DATABASE_PASSWORD: ""
+      AWESONIX_MAIL_DEBUG_LOG_ADDRESS: "off"
+      AWESONIX_MAIL_LOCAL_DIAGNOSTICS: "off"
+      AWESONIX_MAIL_AI_DURABLE_ANALYSIS: "true"
+      AWESONIX_MAIL_AI_DURABLE_BRIEFINGS: "true"
+      AWESONIX_MAIL_AI_COMPLETION_NOTIFICATIONS: "true"
+      AWESONIX_MAIL_TRUSTED_PROXIES: ""
+      AWESONIX_MAIL_DAV_ENABLED: "false"
+      AWESONIX_MAIL_DAV_ADDRESS: 0.0.0.0:8443
+      AWESONIX_MAIL_DAV_BASE_URL: ""
+      AWESONIX_MAIL_DAV_TLS_CERT_PATH: ""
+      AWESONIX_MAIL_DAV_TLS_KEY_PATH: ""
+    volumes:
+      - type: bind
+        source: /mnt/REPLACE_POOL/REPLACE_MAIL
+        target: /srv/mail
+        bind: {create_host_path: false}
+      - type: bind
+        source: /mnt/REPLACE_POOL/REPLACE_SECRETS
+        target: /srv/secrets
+        bind: {create_host_path: false}
+      - type: bind
+        source: /mnt/REPLACE_POOL/REPLACE_LOGS
+        target: /srv/logs
+        bind: {create_host_path: false}
+    read_only: true
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    cap_add: [CHOWN, SETGID, SETUID]
+    mem_limit: 2g
+    # Optional limits, remove the # to use them:
+    # cpus: 2.0
+    # pids_limit: 512
+    stop_grace_period: 120s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "5"}
+    restart: unless-stopped

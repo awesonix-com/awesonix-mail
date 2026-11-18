@@ -1,0 +1,801 @@
+{
+  "schemaVersion": 1,
+  "ecosystem": "go-linked-modules",
+  "source": [
+    "./cmd/awesonix-mail",
+    "./cmd/awesonix-mail-sync-worker",
+    "./cmd/awesonix-mail-supervisor"
+  ],
+  "componentCount": 65,
+  "components": [
+    {
+      "name": "cloud.google.com/go/auth/oauth2adapt",
+      "version": "v0.2.8",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/cloud.google.com/go/auth/oauth2adapt@v0.2.8",
+      "licenseFiles": [
+        {
+          "path": "components/cloud.google.com__go__auth__oauth2adapt_at_v0.2.8/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "cloud.google.com/go/auth",
+      "version": "v0.23.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/cloud.google.com/go/auth@v0.23.0",
+      "licenseFiles": [
+        {
+          "path": "components/cloud.google.com__go__auth_at_v0.23.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "cloud.google.com/go/compute/metadata",
+      "version": "v0.9.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/cloud.google.com/go/compute/metadata@v0.9.0",
+      "licenseFiles": [
+        {
+          "path": "components/cloud.google.com__go__compute__metadata_at_v0.9.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "filippo.io/edwards25519",
+      "version": "v1.2.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/filippo.io/edwards25519@v1.2.0",
+      "licenseFiles": [
+        {
+          "path": "components/filippo.io__edwards25519_at_v1.2.0/LICENSE",
+          "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+        }
+      ]
+    },
+    {
+      "name": "github.com/RoaringBitmap/roaring/v2",
+      "version": "v2.14.5",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/RoaringBitmap/roaring/v2@v2.14.5",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__RoaringBitmap__roaring__v2_at_v2.14.5/LICENSE",
+          "sha256": "4de906d3a8209e552fb454c403be1f189f1802dc9d807cc36c57348cae6d6c3f"
+        }
+      ]
+    },
+    {
+      "name": "github.com/SherClockHolmes/webpush-go",
+      "version": "v1.4.0",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/SherClockHolmes/webpush-go@v1.4.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__SherClockHolmes__webpush-go_at_v1.4.0/LICENSE",
+          "sha256": "0c065563a77bd48b5ba9094cb935b3f8cc7c6b026130986dd028202c4210e46e"
+        }
+      ]
+    },
+    {
+      "name": "github.com/aymerick/douceur",
+      "version": "v0.2.0",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/aymerick/douceur@v0.2.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__aymerick__douceur_at_v0.2.0/LICENSE",
+          "sha256": "ba43a2005466c2e4d84d7b4af55f6c88a982c5e4831b9a58347e800281e560bf"
+        }
+      ]
+    },
+    {
+      "name": "github.com/bits-and-blooms/bitset",
+      "version": "v1.24.2",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/bits-and-blooms/bitset@v1.24.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__bits-and-blooms__bitset_at_v1.24.2/LICENSE",
+          "sha256": "3ef376b769105f14098dd45e9d08ed3568c77d38ad33c470634606048e62119f"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/bleve/v2",
+      "version": "v2.6.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/bleve/v2@v2.6.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__bleve__v2_at_v2.6.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/bleve_index_api",
+      "version": "v1.3.11",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/bleve_index_api@v1.3.11",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__bleve_index_api_at_v1.3.11/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/geo",
+      "version": "v0.2.5",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/geo@v0.2.5",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__geo_at_v0.2.5/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/go-porterstemmer",
+      "version": "v1.0.3",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/go-porterstemmer@v1.0.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__go-porterstemmer_at_v1.0.3/LICENSE",
+          "sha256": "689a52b19550ab674d9b0105e2fb49140a01d175c83197bee561f9b2375711d8"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/gtreap",
+      "version": "v0.1.1",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/gtreap@v0.1.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__gtreap_at_v0.1.1/LICENSE",
+          "sha256": "264d6f46c9a1fffb63a1e7f620e7c8aedc01f3e9df02c4ac0a233f3b11889e5c"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/mmap-go",
+      "version": "v1.2.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/mmap-go@v1.2.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__mmap-go_at_v1.2.0/LICENSE",
+          "sha256": "121d4529907b7d822d7665bde14ae142dc8a119356991fbc759ed562444dc02f"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/scorch_segment_api/v2",
+      "version": "v2.4.7",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/scorch_segment_api/v2@v2.4.7",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__scorch_segment_api__v2_at_v2.4.7/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/segment",
+      "version": "v0.9.1",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/segment@v0.9.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__segment_at_v0.9.1/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/snowballstem",
+      "version": "v0.9.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/snowballstem@v0.9.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__snowballstem_at_v0.9.0/COPYING",
+          "sha256": "f6f9e4c0e737728ca980de8595ded046d5e077017c1bb0ee05dc794a01434dae"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/upsidedown_store_api",
+      "version": "v1.0.2",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/upsidedown_store_api@v1.0.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__upsidedown_store_api_at_v1.0.2/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/vellum",
+      "version": "v1.2.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/vellum@v1.2.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__vellum_at_v1.2.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v11",
+      "version": "v11.4.3",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v11@v11.4.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v11_at_v11.4.3/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v12",
+      "version": "v12.4.3",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v12@v12.4.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v12_at_v12.4.3/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v13",
+      "version": "v13.4.3",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v13@v13.4.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v13_at_v13.4.3/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v14",
+      "version": "v14.4.3",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v14@v14.4.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v14_at_v14.4.3/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v15",
+      "version": "v15.4.3",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v15@v15.4.3",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v15_at_v15.4.3/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v16",
+      "version": "v16.3.4",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v16@v16.3.4",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v16_at_v16.3.4/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/blevesearch/zapx/v17",
+      "version": "v17.1.2",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/blevesearch/zapx/v17@v17.1.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__blevesearch__zapx__v17_at_v17.1.2/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/cespare/xxhash/v2",
+      "version": "v2.3.0",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/cespare/xxhash/v2@v2.3.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__cespare__xxhash__v2_at_v2.3.0/LICENSE.txt",
+          "sha256": "f566a9f97bacdaf00d9f21dd991e81dc11201c4e016c86b470799429a1c9a79c"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-ical",
+      "version": "v0.0.0-20250609112844-439c63cef608",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-ical@v0.0.0-20250609112844-439c63cef608",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-ical_at_v0.0.0-20250609112844-439c63cef608/LICENSE",
+          "sha256": "b7e9d2b3e4992366a9dc2d4f09b8de98e2e37ec728938a8ac8ab776781e147ad"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-imap/v2",
+      "version": "v2.0.0-beta.8",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-imap/v2@v2.0.0-beta.8",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-imap__v2_at_v2.0.0-beta.8/LICENSE",
+          "sha256": "04c033c1515257f99b853e72b19ba7b0f589a9a8e690388120524a5190a03137"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-imap",
+      "version": "v1.2.1",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-imap@v1.2.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-imap_at_v1.2.1/LICENSE",
+          "sha256": "ae2fef7b2382c17e5bd9b34b98129c759019838c55ef5bc21967644753addf48"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-message",
+      "version": "v0.18.2",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-message@v0.18.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-message_at_v0.18.2/LICENSE",
+          "sha256": "9e84a70e67cb6d9e79df2612bd111d5c505b40422ce146afe8477bb1af83155a"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-msgauth",
+      "version": "v0.7.0",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-msgauth@v0.7.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-msgauth_at_v0.7.0/LICENSE",
+          "sha256": "f6a0bb70539f38556b1ed03c35a965fda1db9feeaceb63138843258ca0ca9709"
+        }
+      ]
+    },
+    {
+      "name": "github.com/emersion/go-sasl",
+      "version": "v0.0.0-20241020182733-b788ff22d5a6",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/emersion/go-sasl@v0.0.0-20241020182733-b788ff22d5a6",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__emersion__go-sasl_at_v0.0.0-20241020182733-b788ff22d5a6/LICENSE",
+          "sha256": "0e98a5e907c72bd63b5eaf64c662fa146f139931b2608a1427286577b9900cc4"
+        }
+      ]
+    },
+    {
+      "name": "github.com/felixge/httpsnoop",
+      "version": "v1.0.4",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/felixge/httpsnoop@v1.0.4",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__felixge__httpsnoop_at_v1.0.4/LICENSE.txt",
+          "sha256": "8108e14b5cb2b6bcd51583d3849ef0c2b5c4de61758256c20308bc70d1775dbb"
+        }
+      ]
+    },
+    {
+      "name": "github.com/go-logr/logr",
+      "version": "v1.4.4",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/go-logr/logr@v1.4.4",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__go-logr__logr_at_v1.4.4/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ]
+    },
+    {
+      "name": "github.com/go-logr/stdr",
+      "version": "v1.2.2",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/go-logr/stdr@v1.2.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__go-logr__stdr_at_v1.2.2/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "github.com/go-sql-driver/mysql",
+      "version": "v1.10.0",
+      "licenseExpression": "MPL-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/go-sql-driver/mysql@v1.10.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__go-sql-driver__mysql_at_v1.10.0/LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        }
+      ],
+      "sourceArchive": {
+        "path": "sources/github.com__go-sql-driver__mysql_at_v1.10.0.zip",
+        "sha256": "dc93f5770556406e82bf750a980d2316f882a19d883a3689eadb820708c2b651",
+        "moduleSum": "h1:Q+1LV8DkHJvSYAdR83XzuhDaTykuDx0l6fkXxoWCWfw="
+      }
+    },
+    {
+      "name": "github.com/golang-jwt/jwt/v5",
+      "version": "v5.3.1",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/golang-jwt/jwt/v5@v5.3.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__golang-jwt__jwt__v5_at_v5.3.1/LICENSE",
+          "sha256": "2ce2d18a4c90147990d4ea9b690bcb7a5e13239e8a31ef68bedd0f99f79e0cf6"
+        }
+      ]
+    },
+    {
+      "name": "github.com/golang-migrate/migrate/v4",
+      "version": "v4.19.1",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/golang-migrate/migrate/v4@v4.19.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__golang-migrate__migrate__v4_at_v4.19.1/LICENSE",
+          "sha256": "4c250e1d2cb21c738d5ec785f6fb1e03cd1e9adecfab46feb9494847872455be"
+        }
+      ]
+    },
+    {
+      "name": "github.com/golang/snappy",
+      "version": "v1.0.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/golang/snappy@v1.0.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__golang__snappy_at_v1.0.0/LICENSE",
+          "sha256": "f69f157b0be75da373605dbc8bbf142e8924ee82d8f44f11bcaf351335bf98cf"
+        }
+      ]
+    },
+    {
+      "name": "github.com/google/s2a-go",
+      "version": "v0.1.9",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/google/s2a-go@v0.1.9",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__google__s2a-go_at_v0.1.9/LICENSE.md",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/google/uuid",
+      "version": "v1.6.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/google/uuid@v1.6.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__google__uuid_at_v1.6.0/LICENSE",
+          "sha256": "0a8d61ed3cbfd5312326e8126c31ce9c627a283adc99131b56896d29ada04b2d"
+        }
+      ]
+    },
+    {
+      "name": "github.com/googleapis/enterprise-certificate-proxy",
+      "version": "v0.3.20",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/googleapis/enterprise-certificate-proxy@v0.3.20",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__googleapis__enterprise-certificate-proxy_at_v0.3.20/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/googleapis/gax-go/v2",
+      "version": "v2.23.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/googleapis/gax-go/v2@v2.23.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__googleapis__gax-go__v2_at_v2.23.0/LICENSE",
+          "sha256": "b95218cd9607855a6536384c0262922b30a0c2bf56e4ced790240f3a3bac4722"
+        }
+      ]
+    },
+    {
+      "name": "github.com/gorilla/css",
+      "version": "v1.0.1",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/gorilla/css@v1.0.1",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__gorilla__css_at_v1.0.1/LICENSE",
+          "sha256": "0b77fdea862f869ef4f201ac5649bdbd38ccb055c7f6454dffae9e2adb4941c1"
+        }
+      ]
+    },
+    {
+      "name": "github.com/json-iterator/go",
+      "version": "v0.0.0-20171115153421-f7279a603ede",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/json-iterator/go@v0.0.0-20171115153421-f7279a603ede",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__json-iterator__go_at_v0.0.0-20171115153421-f7279a603ede/LICENSE",
+          "sha256": "3247931083f058b00760a3c32a9ca0962c05e4d562ad2ffcc1753451fa8d4486"
+        }
+      ]
+    },
+    {
+      "name": "github.com/microcosm-cc/bluemonday",
+      "version": "v1.0.27",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/github.com/microcosm-cc/bluemonday@v1.0.27",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__microcosm-cc__bluemonday_at_v1.0.27/LICENSE.md",
+          "sha256": "a8e8489f1168b5f3e0ebb43d7fe1c78a2fd7db9939c1a6cb555940a4b631f8d2"
+        }
+      ]
+    },
+    {
+      "name": "github.com/mschoch/smat",
+      "version": "v0.2.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/github.com/mschoch/smat@v0.2.0",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__mschoch__smat_at_v0.2.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "github.com/skip2/go-qrcode",
+      "version": "v0.0.0-20200617195104-da1b6568686e",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/skip2/go-qrcode@v0.0.0-20200617195104-da1b6568686e",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__skip2__go-qrcode_at_v0.0.0-20200617195104-da1b6568686e/LICENSE",
+          "sha256": "4cdab772de606bdf53e174b2f5d6a2c398156380ca1f763122198cece531d02c"
+        }
+      ]
+    },
+    {
+      "name": "github.com/teambition/rrule-go",
+      "version": "v1.8.2",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/github.com/teambition/rrule-go@v1.8.2",
+      "licenseFiles": [
+        {
+          "path": "components/github.com__teambition__rrule-go_at_v1.8.2/LICENSE",
+          "sha256": "2c5aa8001e37c2ba4488e1c809772c9372623f2eaa0605b9abd8863cf7a3470f"
+        }
+      ]
+    },
+    {
+      "name": "go.etcd.io/bbolt",
+      "version": "v1.4.0",
+      "licenseExpression": "MIT",
+      "packageDocumentation": "https://pkg.go.dev/go.etcd.io/bbolt@v1.4.0",
+      "licenseFiles": [
+        {
+          "path": "components/go.etcd.io__bbolt_at_v1.4.0/LICENSE",
+          "sha256": "c15d721c37e277a11584547de6d618541501f7aa10c4e32a945a4f9ff36cb0f6"
+        }
+      ]
+    },
+    {
+      "name": "go.opentelemetry.io/auto/sdk",
+      "version": "v1.2.1",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/go.opentelemetry.io/auto/sdk@v1.2.1",
+      "licenseFiles": [
+        {
+          "path": "components/go.opentelemetry.io__auto__sdk_at_v1.2.1/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+      "version": "v0.67.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.67.0",
+      "licenseFiles": [
+        {
+          "path": "components/go.opentelemetry.io__contrib__instrumentation__net__http__otelhttp_at_v0.67.0/LICENSE",
+          "sha256": "6b747bfc5952d5d71d5d384dfe2131b0d3bccd7a90c6b3c280bc28d539963e2f"
+        }
+      ]
+    },
+    {
+      "name": "go.opentelemetry.io/otel/metric",
+      "version": "v1.45.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/go.opentelemetry.io/otel/metric@v1.45.0",
+      "licenseFiles": [
+        {
+          "path": "components/go.opentelemetry.io__otel__metric_at_v1.45.0/LICENSE",
+          "sha256": "6b747bfc5952d5d71d5d384dfe2131b0d3bccd7a90c6b3c280bc28d539963e2f"
+        }
+      ]
+    },
+    {
+      "name": "go.opentelemetry.io/otel/trace",
+      "version": "v1.45.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/go.opentelemetry.io/otel/trace@v1.45.0",
+      "licenseFiles": [
+        {
+          "path": "components/go.opentelemetry.io__otel__trace_at_v1.45.0/LICENSE",
+          "sha256": "6b747bfc5952d5d71d5d384dfe2131b0d3bccd7a90c6b3c280bc28d539963e2f"
+        }
+      ]
+    },
+    {
+      "name": "go.opentelemetry.io/otel",
+      "version": "v1.45.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/go.opentelemetry.io/otel@v1.45.0",
+      "licenseFiles": [
+        {
+          "path": "components/go.opentelemetry.io__otel_at_v1.45.0/LICENSE",
+          "sha256": "6b747bfc5952d5d71d5d384dfe2131b0d3bccd7a90c6b3c280bc28d539963e2f"
+        }
+      ]
+    },
+    {
+      "name": "golang.org/x/crypto",
+      "version": "v0.59.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/golang.org/x/crypto@v0.59.0",
+      "licenseFiles": [
+        {
+          "path": "components/golang.org__x__crypto_at_v0.59.0/LICENSE",
+          "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+        }
+      ]
+    },
+    {
+      "name": "golang.org/x/net",
+      "version": "v0.62.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/golang.org/x/net@v0.62.0",
+      "licenseFiles": [
+        {
+          "path": "components/golang.org__x__net_at_v0.62.0/LICENSE",
+          "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+        }
+      ]
+    },
+    {
+      "name": "golang.org/x/oauth2",
+      "version": "v0.36.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/golang.org/x/oauth2@v0.36.0",
+      "licenseFiles": [
+        {
+          "path": "components/golang.org__x__oauth2_at_v0.36.0/LICENSE",
+          "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+        }
+      ]
+    },
+    {
+      "name": "golang.org/x/sys",
+      "version": "v0.50.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/golang.org/x/sys@v0.50.0",
+      "licenseFiles": [
+        {
+          "path": "components/golang.org__x__sys_at_v0.50.0/LICENSE",
+          "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+        }
+      ]
+    },
+    {
+      "name": "golang.org/x/text",
+      "version": "v0.44.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/golang.org/x/text@v0.44.0",
+      "licenseFiles": [
+        {
+          "path": "components/golang.org__x__text_at_v0.44.0/LICENSE",
+          "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+        }
+      ]
+    },
+    {
+      "name": "google.golang.org/api",
+      "version": "v0.293.0",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/google.golang.org/api@v0.293.0",
+      "licenseFiles": [
+        {
+          "path": "components/google.golang.org__api_at_v0.293.0/LICENSE",
+          "sha256": "110244b02140866ee37d17fa7449436a377ec3b85a481fbb208f4c87964382de"
+        }
+      ]
+    },
+    {
+      "name": "google.golang.org/genproto/googleapis/rpc",
+      "version": "v0.0.0-20260817212433-ac3dfec99bb1",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/google.golang.org/genproto/googleapis/rpc@v0.0.0-20260817212433-ac3dfec99bb1",
+      "licenseFiles": [
+        {
+          "path": "components/google.golang.org__genproto__googleapis__rpc_at_v0.0.0-20260817212433-ac3dfec99bb1/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "google.golang.org/grpc",
+      "version": "v1.85.0",
+      "licenseExpression": "Apache-2.0",
+      "packageDocumentation": "https://pkg.go.dev/google.golang.org/grpc@v1.85.0",
+      "licenseFiles": [
+        {
+          "path": "components/google.golang.org__grpc_at_v1.85.0/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "components/google.golang.org__grpc_at_v1.85.0/NOTICE.txt",
+          "sha256": "693ff28ec216d5112ac1bbfe64ef539005867d1c7bd427b57d579683293b947f"
+        }
+      ]
+    },
+    {
+      "name": "google.golang.org/protobuf",
+      "version": "v1.36.12",
+      "licenseExpression": "BSD-3-Clause",
+      "packageDocumentation": "https://pkg.go.dev/google.golang.org/protobuf@v1.36.12",
+      "licenseFiles": [
+        {
+          "path": "components/google.golang.org__protobuf_at_v1.36.12/LICENSE",
+          "sha256": "4835612df0098ca95f8e7d9e3bffcb02358d435dbb38057c844c99d7f725eb20"
+        }
+      ]
+    }
+  ]
+}

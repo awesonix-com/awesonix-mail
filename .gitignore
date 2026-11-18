@@ -1,0 +1,2 @@
+# Distribution files and checksum manifests are tracked. The versioned image archive is a GitHub Release asset.
+# Packaging replaces the current archive; Git history policy is handled separately.

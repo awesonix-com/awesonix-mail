@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "ecosystem": "bundled-font-assets",
+  "componentCount": 5,
+  "components": [
+    {
+      "name": "Manrope Latin variable webfont",
+      "version": "Google Fonts v20",
+      "licenseExpression": "OFL-1.1",
+      "shippedPath": "product/frontend/public/fonts/manrope-latin.woff2",
+      "shippedSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "exactAssetSource": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+      "licenseFiles": [
+        {
+          "path": "components/manrope/OFL.txt",
+          "sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+          "source": "https://raw.githubusercontent.com/google/fonts/fb629caaa15ad25c051089c98f09cf6c8e30a86b/ofl/manrope/OFL.txt"
+        },
+        {
+          "path": "components/manrope/FONTLOG.txt",
+          "sha256": "b6b54bcc1dbd1b18d5afd087ec0b578097644b1c9ec3e0a642d4df7808f449c2",
+          "source": "https://raw.githubusercontent.com/google/fonts/fb629caaa15ad25c051089c98f09cf6c8e30a86b/ofl/manrope/FONTLOG.txt"
+        }
+      ]
+    },
+    {
+      "name": "Space Grotesk Latin variable webfont",
+      "version": "Google Fonts v22",
+      "licenseExpression": "OFL-1.1",
+      "shippedPath": "product/frontend/public/fonts/space-grotesk-latin.woff2",
+      "shippedSha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "exactAssetSource": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+      "licenseFiles": [
+        {
+          "path": "components/space-grotesk/OFL.txt",
+          "sha256": "c6dec685825f73b18c20926fddc65e8315642e12986f15db0699170940a09efc",
+          "source": "https://raw.githubusercontent.com/floriankarsten/space-grotesk/4a44bc96691ab8f0fd06e3da65224a2ab30afe23/OFL.txt"
+        }
+      ]
+    },
+    {
+      "name": "Roboto Latin variable webfont",
+      "version": "Google Fonts v51",
+      "licenseExpression": "OFL-1.1",
+      "shippedPath": "product/frontend/public/fonts/roboto-latin.woff2",
+      "shippedSha256": "0a44e0bb6ba5c8537e8814c148ef7755f1bce12112361231f595ecc584a18d7a",
+      "exactAssetSource": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+      "licenseFiles": [
+        {
+          "path": "components/roboto/OFL.txt",
+          "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+          "source": "https://raw.githubusercontent.com/google/fonts/1c627bfa375fc51cf86fabeca4f6e08a95f0aa5c/ofl/roboto/OFL.txt"
+        }
+      ]
+    },
+    {
+      "name": "IBM Plex Sans Latin variable webfont",
+      "version": "Google Fonts v23",
+      "licenseExpression": "OFL-1.1",
+      "shippedPath": "product/frontend/public/fonts/ibm-plex-sans-latin.woff2",
+      "shippedSha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "exactAssetSource": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+      "licenseFiles": [
+        {
+          "path": "components/ibm-plex-sans/OFL.txt",
+          "sha256": "37784b44044a4ffd9256702b7c0982c37e5c8887ba90c6dca0479aea93dc898d",
+          "source": "https://raw.githubusercontent.com/google/fonts/0b58fb370093f9a9f4ff785d94405710b79de67c/ofl/ibmplexsans/OFL.txt"
+        }
+      ]
+    },
+    {
+      "name": "Google Sans Flex Latin variable webfont",
+      "version": "Google Fonts v26",
+      "licenseExpression": "OFL-1.1",
+      "shippedPath": "product/frontend/public/fonts/google-sans-flex-latin.woff2",
+      "shippedSha256": "e05bae17ed019b99814923c9a6f3979be19d00fcc36bf624fcb66f59c70e83bb",
+      "exactAssetSource": "https://fonts.gstatic.com/s/googlesansflex/v26/t5svIQcYNIWbFgDgAAzZ34auoVyXkJCOvoOmPWNbN5hF8Ju1x5Vwd0N3l9sIcwowNJwGpVd4AZzz0v6lJ4qFXNZhGjLvDSkV4W6GGn9Q3I8i.woff2",
+      "licenseFiles": [
+        {
+          "path": "components/google-sans-flex/OFL.txt",
+          "sha256": "157713e50cf5033c08b79959e2ece86b064daed73cfff8e4cadb8cbf4401414c",
+          "source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/googlesansflex/OFL.txt"
+        },
+        {
+          "path": "components/google-sans-flex/TRADEMARKS.md",
+          "sha256": "5cad381c0828db656f32a787a1eff76db3303c74ec4f94668ae9fc2873ffe42f",
+          "source": "https://raw.githubusercontent.com/google/fonts/bd8f81ddb5c74d5c8897b36ad88b440266245103/ofl/googlesansflex/TRADEMARKS.md"
+        }
+      ]
+    }
+  ]
+}

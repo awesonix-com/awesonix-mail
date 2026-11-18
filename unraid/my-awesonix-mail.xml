@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>Awesonix Mail</Name>
+  <Repository>ghcr.io/awesonix-com/awesonix-mail:latest</Repository>
+  <Network>bridge</Network>
+  <Shell></Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/awesonix-com/awesonix-mail/issues</Support>
+  <Project>https://github.com/awesonix-com/awesonix-mail</Project>
+  <Overview>Self-hosted webmail aggregator with an independently managed external database service. First run: http://[IP]:[PORT:8180]/setup</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8180]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/awesonix-com/awesonix-mail/main/unraid/my-awesonix-mail.xml</TemplateURL>
+  <Icon>https://awesonix.com/.misc/awesonix-mail-icon-ax-256.png</Icon>
+  <ExtraParams>--restart unless-stopped --read-only --security-opt=no-new-privileges:true --cap-drop=ALL --cap-add=CHOWN --cap-add=SETGID --cap-add=SETUID --memory=2g --cpus=2 --pids-limit=512 --stop-timeout=120</ExtraParams>
+  <Config Name="HTTP Port" Target="8180" Default="8180" Mode="tcp" Description="Web interface and API port" Type="Port" Display="always" Required="true">8180</Config>
+  <Config Name="Debug Log Port" Target="8182" Default="" Mode="tcp" Description="Optional token-gated diagnostics/MCP host port; leave empty while the diagnostics listener is off" Type="Port" Display="advanced" Required="false"></Config>
+  <Config Name="Database Server Address" Target="AWESONIX_MAIL_DATABASE_HOST" Default="" Mode="" Description="Hostname or IP address of the database server, without a protocol or port (leave empty to enter it in the set-up wizard)" Type="Variable" Display="always" Required="false"></Config>
+  <Config Name="Database Server Port" Target="AWESONIX_MAIL_DATABASE_PORT" Default="3306" Mode="" Description="TCP port exposed by the database server. Keep the default unless your database uses another value" Type="Variable" Display="always" Required="false">3306</Config>
+  <Config Name="Database Name" Target="AWESONIX_MAIL_DATABASE_NAME" Default="awesonix_mail" Mode="" Description="Existing database reserved for Awesonix Mail. Keep the default unless your database uses another value" Type="Variable" Display="always" Required="false">awesonix_mail</Config>
+  <Config Name="Database Username" Target="AWESONIX_MAIL_DATABASE_USER" Default="awesonix" Mode="" Description="Database account with full access to the selected database. Keep the default unless your database uses another value" Type="Variable" Display="always" Required="false">awesonix</Config>
+  <Config Name="Database Password" Target="AWESONIX_MAIL_DATABASE_PASSWORD" Default="" Mode="" Description="Password for the database account (leave empty to enter it in the set-up wizard)" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Mail Storage Path" Target="/srv/mail" Default="/mnt/user/appdata/awesonix-mail/mail" Mode="rw" Description="Raw mail objects and search index" Type="Path" Display="always" Required="true">/mnt/user/appdata/awesonix-mail/mail</Config>
+  <Config Name="Secrets Path" Target="/srv/secrets" Default="/mnt/user/appdata/awesonix-mail/secrets" Mode="rw" Description="Master key and protected runtime configuration" Type="Path" Display="always" Required="true">/mnt/user/appdata/awesonix-mail/secrets</Config>
+  <Config Name="Logs Path" Target="/srv/logs" Default="/mnt/user/appdata/awesonix-mail/logs" Mode="rw" Description="Bounded persistent application debug history" Type="Path" Display="always" Required="true">/mnt/user/appdata/awesonix-mail/logs</Config>
+  <Config Name="Attachment Limit (MiB)" Target="AWESONIX_MAIL_ATTACHMENT_LIMIT_MIB" Default="20" Mode="" Description="Maximum attachment size per draft (1-100)" Type="Variable" Display="advanced" Required="false">20</Config>
+  <Config Name="Setup Token Minutes" Target="AWESONIX_MAIL_SETUP_TOKEN_MINUTES" Default="30" Mode="" Description="First-run setup token expiry in minutes" Type="Variable" Display="advanced" Required="false">30</Config>
+  <Config Name="Durable AI Analysis" Target="AWESONIX_MAIL_AI_DURABLE_ANALYSIS" Default="true" Mode="" Description="Keep enabled for automatic analysis and re-analysis jobs" Type="Variable" Display="advanced" Required="true">true</Config>
+  <Config Name="Durable AI Briefings" Target="AWESONIX_MAIL_AI_DURABLE_BRIEFINGS" Default="true" Mode="" Description="Keep enabled for scheduled Vigil briefings" Type="Variable" Display="advanced" Required="true">true</Config>
+  <Config Name="AI Completion Notifications" Target="AWESONIX_MAIL_AI_COMPLETION_NOTIFICATIONS" Default="true" Mode="" Description="Send a notification when a Vigil briefing is ready; users control Assistant alerts in notification settings" Type="Variable" Display="advanced" Required="true">true</Config>
+  <Config Name="Trusted Proxies" Target="AWESONIX_MAIL_TRUSTED_PROXIES" Default="" Mode="" Description="Reverse proxies whose X-Forwarded-For entries count: comma-separated IP addresses or CIDR networks, or none. Empty means the default 127.0.0.0/8,::1/128,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,fc00::/7,169.254.0.0/16,fe80::/10" Type="Variable" Display="advanced" Required="false"></Config>
+  <Config Name="Runtime Environment" Target="AWESONIX_MAIL_ENV" Default="production" Mode="" Description="Keep production for every normal Unraid deployment" Type="Variable" Display="advanced" Required="true">production</Config>
+  <Config Name="Diagnostics Listener" Target="AWESONIX_MAIL_DEBUG_LOG_ADDRESS" Default="off" Mode="" Description="Use off by default; set to 0.0.0.0:8182 only with a protected diagnostics port" Type="Variable" Display="advanced" Required="true">off</Config>
+  <Config Name="Debug Token Minutes" Target="AWESONIX_MAIL_DEBUG_TOKEN_MINUTES" Default="60" Mode="" Description="Diagnostic bearer-token lifetime in minutes (1-1440) when diagnostics are enabled" Type="Variable" Display="advanced" Required="false">60</Config>
+  <Config Name="Tokenless Local Diagnostics" Target="AWESONIX_MAIL_LOCAL_DIAGNOSTICS" Default="off" Mode="" Description="Keep off in production; observe/control are accepted only in isolated test mode" Type="Variable" Display="advanced" Required="true">off</Config>
+  <Config Name="Tokenless Diagnostics Owner" Target="AWESONIX_MAIL_LOCAL_DIAGNOSTICS_OWNER" Default="" Mode="" Description="Keep empty when tokenless diagnostics are off; test-only owner email principal" Type="Variable" Display="advanced" Required="false"></Config>
+</Container>
