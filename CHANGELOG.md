@@ -2,7 +2,7 @@
 
 This file lists every version with its upgrade steps, commands, and operator-facing changes. The web app and the phone app show a shorter changelog for users, in `CHANGELOG.USER.md`.
 
-## 0.115.1–0.115.2 — Standard image labels and a neutral offline archive name · 2026-11-17 to 2026-11-18 (Development)
+## 0.115.1–0.115.4 — Standard image labels and a neutral offline archive name · 2026-11-17 to 2026-11-18 (Development)
 
 - **Image labels.** The image now carries four standard labels and no others: `org.opencontainers.image.title`, `version`, `revision`, and the new `created`. The four custom labels of earlier versions are gone. They held the project name, the lab flag, the build number, and the clean or dirty state. The `created` label holds the build time in UTC, and the build number is the Unix form of that time. A script that read a custom label must read a standard label instead.
 - **No build attestation.** The image is one plain manifest. Earlier images had a build attestation beside it. A tool that reads the attestation finds none.

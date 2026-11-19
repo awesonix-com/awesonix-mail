@@ -1,4 +1,4 @@
-# Awesonix Mail 0.115.2 licences
+# Awesonix Mail 0.115.4 licences
 
 This directory accompanies the Awesonix Mail distribution and preserves the product agreement, concise third-party notice, complete component-level compliance bundle, and source-availability instructions for this release.
 

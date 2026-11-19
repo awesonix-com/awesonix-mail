@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunityApplications>
+  <Profile>Awesonix Mail is a self-hosted, multi-user webmail aggregator that keeps a complete local copy of your mail. This repository holds its Unraid template. Support: GitHub issues.</Profile>
+  <Icon>https://awesonix.com/.misc/awesonix-mail-icon-ax-256.png</Icon>
+  <WebPage>https://github.com/awesonix-com/awesonix-mail</WebPage>
+  <DonateLink>https://ko-fi.com/awesonix</DonateLink>
+</CommunityApplications>
