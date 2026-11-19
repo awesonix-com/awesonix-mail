@@ -2,7 +2,7 @@
 
 Awesonix Mail uses Unraid's native Docker-template workflow; Unraid does not natively require Docker Compose for this package.
 
-1. The template pulls `ghcr.io/awesonix-com/awesonix-mail:latest` automatically. For an offline installation, verify and load `awesonix-mail-0.115.4-linux-amd64.tar` (download it from the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.4)), then run `docker tag awesonix-mail:0.115.4 ghcr.io/awesonix-com/awesonix-mail:latest` in an Unraid terminal before applying the template.
+1. The template pulls `ghcr.io/awesonix-com/awesonix-mail:latest` automatically. For an offline installation, verify and load `awesonix-mail-0.115.5-linux-amd64.tar` (download it from the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.5)), then run `docker tag awesonix-mail:0.115.5 ghcr.io/awesonix-com/awesonix-mail:latest` in an Unraid terminal before applying the template.
 2. Copy `my-awesonix-mail.xml` to `/boot/config/plugins/dockerMan/templates-user/`.
 3. Provision a separate database container or server (tested with MariaDB 11.4) and a dedicated user. The database fields of the template are optional. Leave the server address and password empty to enter the database settings in the first-run wizard. Or enter the server address, port, database name, username, and password in the template; then the variables win. Do not use `127.0.0.1` for another container.
 4. In the Unraid Docker tab, choose **Add Container**, select the Awesonix Mail template, and review the three Awesonix storage paths. They may be absent on a clean installation; the container initialises them automatically.

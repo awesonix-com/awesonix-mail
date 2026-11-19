@@ -4,7 +4,7 @@
 
 ![Awesonix Mail inbox in the light and the dark theme](docs/img/inbox-light-dark.png)
 
-This is the public repository for Awesonix Mail container releases and platform-oriented distribution files. Download the release package from the [GitHub Releases page](https://github.com/awesonix-com/awesonix-mail/releases): the package is this repository at the release tag, and the offline image archive with its `SHA256SUMS` is attached to the release. Inspect `distribution-manifest.json`, verify the archive and `SHA256SUMS` on the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.4), then follow exactly one platform guide:
+This is the public repository for Awesonix Mail container releases and platform-oriented distribution files. Download the release package from the [GitHub Releases page](https://github.com/awesonix-com/awesonix-mail/releases): the package is this repository at the release tag, and the offline image archive with its `SHA256SUMS` is attached to the release. Inspect `distribution-manifest.json`, verify the archive and `SHA256SUMS` on the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.5), then follow exactly one platform guide:
 
 - `docker/` for Docker Engine or Docker Desktop with Compose.
 - `unraid/` for the Unraid Docker template workflow.
@@ -21,7 +21,7 @@ All variants run the same all-in-one image and expose the web application on hos
 
 The packaged application provides selectable English, Hungarian, German, Dutch, and French interface catalogs with English fallback. The first-round manuals remain English. Consult the package's source-state notice before treating any catalog or image as release-qualified.
 
-The platform templates track `ghcr.io/awesonix-com/awesonix-mail:latest`; the versioned image archive on the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.4) remains available for offline installation. Verify an offline archive and follow the platform guide to tag it for the rolling template reference before installation.
+The platform templates track `ghcr.io/awesonix-com/awesonix-mail:latest`; the versioned image archive on the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.5) remains available for offline installation. Verify an offline archive and follow the platform guide to tag it for the rolling template reference before installation.
 
 The generated repository's `distribution-manifest.json` is authoritative for the released archive version, build, source revision, source state, image digest, size, and checksum. A redistributable may intentionally remain on an older qualified version while newer source is under review; never rename or relabel its archive to match the development tree.
 

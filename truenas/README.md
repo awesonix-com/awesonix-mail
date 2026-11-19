@@ -3,9 +3,9 @@
 This template is prepared for the Custom App YAML editor. The customer has
 deferred host testing; **no TrueNAS release or CPU architecture has been
 qualified for Awesonix Mail.** The release
-archive attached to the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.4) is for Linux AMD64; confirm the image and
+archive attached to the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.5) is for Linux AMD64; confirm the image and
 architecture available for the target before installation.
-The packaged offline archive is `awesonix-mail-0.115.4-linux-amd64.tar` (download it from the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.4)).
+The packaged offline archive is `awesonix-mail-0.115.5-linux-amd64.tar` (download it from the [GitHub Release page](https://github.com/awesonix-com/awesonix-mail/releases/tag/v0.115.5)).
 
 1. Provision a separate database server (tested with MariaDB 11.4) and a
    dedicated user. Record its reachable host, port, database name, username and

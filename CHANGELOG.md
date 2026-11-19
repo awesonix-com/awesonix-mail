@@ -2,6 +2,13 @@
 
 This file lists every version with its upgrade steps, commands, and operator-facing changes. The web app and the phone app show a shorter changelog for users, in `CHANGELOG.USER.md`.
 
+## 0.115.5 — Remote images wait for a free server slot, and a failed image shows a box · 2026-11-19 (Development)
+
+- **Images in a long message.** The server loads each remote image of a mail for the reader and runs at most 8 loads at once. A request beyond the 8th was refused at once with HTTP 429, so a message with many images showed only some of them. A request now waits up to 5 seconds for a free slot, and then gets 429 as before. A request that the reader cancels while it waits leaves at once. The limits for addresses, size, redirects and fetch time do not change. The web reader and the phone app share this server limit.
+- **Failed image.** An image that still cannot load shows a dashed box with a small icon and the description that the sender gave, in the web app and the phone app. A tiny image keeps its place and shows no box.
+- **Upgrade.** No step and no migration. The phone app needs no new build for the wait; the box comes with the next phone app build.
+- **Rollback.** Start the previous image. Messages then load as before, and a failed image shows its description as text.
+
 ## 0.115.1–0.115.4 — Standard image labels and a neutral offline archive name · 2026-11-17 to 2026-11-18 (Development)
 
 - **Image labels.** The image now carries four standard labels and no others: `org.opencontainers.image.title`, `version`, `revision`, and the new `created`. The four custom labels of earlier versions are gone. They held the project name, the lab flag, the build number, and the clean or dirty state. The `created` label holds the build time in UTC, and the build number is the Unix form of that time. A script that read a custom label must read a standard label instead.
